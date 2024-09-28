@@ -23,7 +23,7 @@ pipeline {
     
     post
     {
-        failure
+        always
         {
            build job: 'Build1', parameters: [string(name: 'Browser', value: 'Chrome')] 
         }
